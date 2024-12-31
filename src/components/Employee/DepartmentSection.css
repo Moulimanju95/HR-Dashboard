@@ -1,0 +1,14 @@
+.department-section {
+  width: 100%;
+  padding: 8px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.department-section h2 {
+  font-size: 16px;
+  color: #272727;
+  margin-bottom: 24px;
+  margin-left: 10px;
+}

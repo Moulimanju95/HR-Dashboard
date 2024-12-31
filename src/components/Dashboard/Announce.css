@@ -1,0 +1,94 @@
+.announcement-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 10px;
+  width: 630px;
+  height: 295px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+.announcement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  margin-top: 10px;
+}
+
+.announcement-header .Atitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+.announcement-header .date-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.announcement-header .date-text {
+  font-size: 0.5rem;
+  color: #555;
+}
+
+.announcement-header .icon {
+  width: 200px;
+  height: 10px;
+}
+
+.announcement-card {
+  background-color: #fff;
+  border: 1px solid #efeaea;
+  border-radius: 4px;
+  padding: 14px;
+  margin-bottom: 5px;
+  box-shadow: 0.4px #e0e0e0;
+}
+
+.announcement-card .Atitle-frame .Atitle {
+  font-size: 16px;
+  display: block;
+}
+
+.announcement-card .bottom-frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #777;
+  margin-top: 8px;
+}
+
+.announcement-card .action-frame .icon {
+  width: 20px;
+  height: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.see-all-announcements {
+  text-align: center;
+  color: red;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 0.5px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.see-all-announcements .text {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .announcement-container {
+    width: 88%;
+    height: 315px;
+  }
+  
+}

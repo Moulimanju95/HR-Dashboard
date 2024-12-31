@@ -1,0 +1,170 @@
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: #fff;
+  border-bottom: 2px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 1rem;
+  }
+}
+
+.nleft-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .nleft-section {
+    justify-content: flex-start;
+  }
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  /* width: 200px; */
+  margin-left: 20px;
+}
+
+.search-wrapper input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  font-size: 1rem;
+
+}
+
+.search-wrapper svg {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .search-wrapper {
+    display: none;
+    width: 100%;
+  }
+
+  .search-wrapper.visible {
+    display: flex;
+  }
+}
+
+.search-icon-wrapper {
+  font-size: 2rem;
+  color: #777;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .search-icon-wrapper {
+    display: block;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .search-icon-wrapper {
+    display: none;
+  }
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-section svg {
+  font-size: 1.5rem;
+  color: #777;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.profile-section svg:hover {
+  color: #333;
+}
+
+.profile-section img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.profile-section span {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+.search-section input {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .profile-section span {
+    display: none;
+  }
+
+  .search-section input {
+    width: 100px;
+    padding: 3px;
+  }
+}
+
+.status-indicator {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px; /* Reduced the width */
+  height: 8px; /* Reduced the height */
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* Dynamic color based on status */
+.status-indicator.online {
+  background-color: green;
+}
+
+.status-indicator.offline {
+  background-color: red;
+}
+
+
+

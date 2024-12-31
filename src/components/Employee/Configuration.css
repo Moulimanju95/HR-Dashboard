@@ -1,0 +1,94 @@
+
+
+/* Configuration Section */
+.configuration-section {
+    width: 100%;
+    padding: 8px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+/* Save-Cancel Buttons Heading */
+.save-cancel-buttons h2 {
+    font-size: 14px;
+    color: #272727;
+    margin-bottom: 24px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Save-Cancel Buttons Container */
+.save-cancel-buttons {
+    display: flex;
+    gap: 50px;
+}
+
+/* Button Styles */
+.cancel-button,
+.save-button {
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Cancel Button */
+.cancel-button {
+    background-color: #FFFFFF;
+    color: #171717;
+    border: 1px solid #171717;
+    margin-left: 600px;
+}
+
+/* Save Button */
+.save-button {
+    background-color: #171717;
+    color: #FFFFFF;
+}
+
+/* Hover Effects */
+.cancel-button:hover {
+    background-color: #f0f0f0;
+}
+
+.save-button:hover {
+    background-color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .save-cancel-buttons {
+        justify-content: center; /* Center buttons on smaller screens */
+        gap: 30px;
+    }
+
+    .cancel-button, .save-button {
+        width: 100%; /* Make buttons take full width */
+        max-width: 200px; /* Prevent buttons from getting too wide */
+        margin: 5px auto; /* Add spacing around buttons */
+        font-size: 14px;
+    }
+
+    .save-cancel-buttons h2 {
+        margin-left: 4px; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .save-cancel-buttons h2 {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        font-size: 14px; 
+    }
+
+    .cancel-button, .save-button {
+        font-size: 12px; 
+        padding: 2px; 
+        gap: 0px;
+    }
+}

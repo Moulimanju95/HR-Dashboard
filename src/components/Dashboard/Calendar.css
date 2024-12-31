@@ -1,0 +1,11 @@
+.react-calendar {
+  width: 300px;
+  border-radius: 8px;
+  line-height: 2.125em;
+ 
+}
+
+.react-calendar__tile--active {
+  background: #6c63ff;
+  color: white;
+}

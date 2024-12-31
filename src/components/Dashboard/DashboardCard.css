@@ -1,0 +1,51 @@
+.stats-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   
+
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+.stat-card-leave-request {
+    padding: 9px; 
+    border-radius: 10px;
+    background: #FFEFE7;
+    width: 192px;
+    height: 125px;
+    
+}
+
+.stat-card-attendance {
+    padding: 9px;
+    border-radius: 10px;
+    background: #E8F0FB;
+    width: 192px;
+    height: 125px;
+}
+
+.stat-card-total-employees {
+    padding: 9px;
+    border-radius: 10px;
+    background: #FDEBF9;
+    width: 192px;
+    height: 125px;
+}
+
+
+@media (max-width: 768px) {
+    .stats-container {
+    flex-direction: column;
+    }
+    .stat-card-leave-request, .stat-card-attendance , .stat-card-total-employees{
+        width: 320px;
+    }
+  }

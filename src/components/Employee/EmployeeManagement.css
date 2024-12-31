@@ -1,0 +1,185 @@
+.employee-management {
+  display: flex;
+  height: 100vh;
+  background-color: #F8F8F8;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.dashboard-content {
+  padding: 10px;
+}
+
+.dashboard-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #161E54;
+  margin: 6px;
+}
+.main-content {
+  flex: 1;
+  /* padding: 0 32px; */
+}
+.content-wrapper {
+  flex: 1;
+}
+
+.form-section {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 24px; 
+}
+.form-section h2 {
+  font-size: 16px;
+  color: #272727;
+  margin-bottom: 20px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 24px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.form-group label {
+  font-size: 14px;
+  color: #666666;
+  padding: 5px;
+}
+.required {
+  color: #FF0000;
+}
+
+.form-group select {
+  padding: 8px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  font-size: 14px;
+ 
+  height: 35px;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  font-size: 14px;
+ 
+  height: 20px;
+}
+
+input[type="date" i] {
+  font-family: Poppins sans-serif;
+  padding-inline-start: 1px;
+  cursor: default;
+  padding: 8px;
+  width: 93%;
+  position: relative;
+
+}
+
+.date-input img {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.section-title {
+  margin: 32px 0 24px;
+  display: block;
+
+}
+
+.imgicon h2 {
+  font-size: 16px;
+  color: #272727;
+  font-family: Poppins;
+  width: 195px;
+}
+
+.imgicon {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon{
+  margin-left: 758px;
+}
+
+@media screen and (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .form-group {
+   width: 100%;
+  }
+  .imgicon h2 {
+    width: 200px;
+  }
+  .form-group input{
+    height: 30px;
+    margin-bottom:10px;
+  }
+  .form-group label{
+    margin-bottom:5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .form-group select {
+    margin-bottom:5px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+  }
+  .icon{
+    margin-left: 0px;
+  }
+  .content-wrapper {
+    padding: 10px;
+  }
+  .form-section {
+    padding: 10px;
+  }
+  .form-section h2{
+    font-size: 17px;
+    
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    
+  }
+  .icon{
+    margin-left: 0px;
+  }
+  .content-wrapper {
+    padding: 10px;
+   
+  }
+  .form-section {
+    padding: 10px;
+  }
+
+
+}

@@ -1,0 +1,207 @@
+.dashboard-container {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   max-width: 1440px;
+   margin: 0 auto;
+   height: 100vh;
+   background: #FFFFFF;
+   overflow-x: hidden;
+ }
+
+ .main-content {
+   flex: 1;
+   background: #fff;
+   padding: 0;
+   margin-left: 208px;
+ }
+
+ .dashboard-content1 {
+   padding: 8px;
+   display: flex;
+   flex-direction: row;
+ }
+
+ .dashboard-content {
+   display: flex;
+   flex-direction: column;
+
+ }
+
+ .birthh3 {
+  margin-top: 55px;
+   font-size: 18px;
+   font-weight: 500;
+ }
+
+ .mycalendar {
+   padding: 10px;
+   width: 20%;
+   display: grid;
+   flex-direction: column;
+   /* margin-top: 10px; */
+   height: 55%;
+   @media (max-width: 768px) {
+    display: block; 
+  }
+ }
+
+ .dashboard-title {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 36px;
+   color: #161E54;
+   margin: 14px 0;
+   width: 60%;
+ }
+
+ .stats-row {
+   display: flex;
+   gap: 10px;
+ }
+
+ .stats-card {
+   background: #FFFFFF;
+   border: 1px solid #E5E5E5;
+   border-radius: 10px;
+   padding: 10px;
+   width: 300px;
+   height: 220px;
+ }
+
+ .stats-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /*  margin-bottom: 16px; */
+ }
+
+ .stats-header h3 {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   font-size: 20px;
+   color: #161E54;
+ }
+
+ .percentage-badge {
+   display: flex;
+   align-items: center;
+   gap: 2px;
+   padding: 4px;
+   border-radius: 4px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 12px;
+ }
+
+ .stats-value {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   font-size: 36px;
+   color: #161E54;
+   margin: 8px;
+ }
+
+ .stats-details {
+   display: flex;
+   gap: 16px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   color: #686868;
+   margin-bottom: 8px;
+ }
+
+ .stats-timeframe {
+   font-family: 'Poppins', sans-serif;
+   font-size: 12px;
+   color: #686868;
+ }
+
+ .bottom-row {
+   display: flex;
+   gap: 24px;
+   height: 300px;
+   margin-top: 20px;
+   border: #E5E5E5;
+   border-radius: 6px;
+ }
+
+ .birthday-calendar {
+   background: #fff;
+   /*  padding: 1rem; */
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 4px;
+   justify-items: center;
+ }
+
+ .birthday-cards {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 7px;
+   background: #fff;
+   padding: 28px;
+   border:none;
+   border-radius: 8px;
+   border: 0.5px solid #f0f0f0;
+   text-align: center;
+ }
+ 
+
+ .birthday-cards img {
+   height: 120px;
+   border-radius: 50%;
+ }
+
+ .birthday-cards h4 {
+   margin: 0;
+   font-size: 0.9rem;
+   margin-bottom: 0.5rem;
+   margin-top: 0.5rem;
+ }
+
+ .birthday-cards p {
+   margin: 0;
+   color: #777;
+   font-size: 0.9rem;
+   margin-top: 0.5rem;
+ }
+
+
+ @media (max-width: 768px) {
+   .main-content {
+     margin-left: 0;
+   }
+   .dashboard-content1 {
+     display: grid;
+     flex-direction: column;
+     grid-template-columns: 1fr;
+   }
+   .mycalendar {
+     width: 100%;
+     border: none;
+   }
+   .stats-row {
+     flex-direction: column;
+     width: 95%;
+   }
+   .stats-card {
+     width: 95%;
+     margin-bottom: 16px;
+   }
+   .birthday-calendar {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     margin-left: 0;
+   }
+  
+   .birthday-cards img {
+   width: 130px;
+  }
+  
+  .divbirthday-calendar{
+    margin-top: 10px;
+  }
+ }
